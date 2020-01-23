@@ -3914,3 +3914,592 @@ README.md  submit
 tman1@g7-12:~/i240b$ k[Kexit
 
 Script done on 2020-01-23 15:43:27-05:00 [COMMAND_EXIT_CODE="0"]
+                                                                   [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [25;1H~                                                                               [26;1H~                                                                               [27;1H~                                                                               [28;1H~                                                                               [29;1H~                                                                               [30;1H~                                                                               [31;1H~                                                                               [32;1H~                                                                               [33;1H~                                                                               [34;1H~                                                                               [35;1H~                                                                               [36;1H~                                                                               [37;1H~                                                                               [38;1H~                                                                               [39;1H~                                                                               [40;1H~                                                                               [41;1H~                                                                               [42;1H~                                                                               [43;1H~                                                                               [44;1H~                                                                               [45;1H~                                                                               [46;1H~                                                                               [47;1H~                                                                               [48;1H~                                                                               [m[49;63H0,0-1[9CAll"cs240" [New File][1;1H[?25h[?25l[49;53HZ[1;1H[?25h[?25l[49;54HZ[1;1H[49;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[49;1H[K[49;1H[?2004l[?1l>[?25h[?1049l[23;0;0ttman1@g7-12:~$ ls
+cs220	 dir	    git-repos  Music	 practice.c    Public	  Videos
+cs240	 Documents  i220b      Pictures  practice.obj  Templates
+Desktop  Downloads  i240b      practice  projects      tmp
+tman1@g7-12:~$ cd cs240
+bash: cd: cs240: No such file or directory
+tman1@g7-12:~$ ls
+cs220	 dir	    git-repos  Music	 practice.c    Public	  Videos
+cs240	 Documents  i220b      Pictures  practice.obj  Templates
+Desktop  Downloads  i240b      practice  projects      tmp
+tman1@g7-12:~$ cs[Kd i[Ki240b/
+.git/       .gitignore  README.md   
+tman1@g7-12:~$ cd i240b/
+tman1@g7-12:~/i240b$ git check out -b lab0
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar commands are
+	checkout
+	check-attr
+	cherry
+tman1@g7-12:~/i240b$ git check out -b lab0[C[C[C[1P
+Switched to a new branch 'lab0'
+tman1@g7-12:~/i240b$ mk [Kdir -p sumbi[K[K[Kbmit
+tman1@g7-12:~/i240b$ ls
+README.md  submit
+tman1@g7-12:~/i240b$ cd ..
+tman1@g7-12:~$ ls
+cs220	 dir	    git-repos  Music	 practice.c    Public	  Videos
+cs240	 Documents  i220b      Pictures  practice.obj  Templates
+Desktop  Downloads  i240b      practice  projects      tmp
+tman1@g7-12:~$ cd i240b/
+tman1@g7-12:~/i240b$ ls
+README.md  submit
+tman1@g7-12:~/i240b$ k[Kexit
+Script done, file is lab0.log
+tman1@g7-12:~/tmp/lab0$ ls -l ~/tmp/lab
+lab0/ lab8/ 
+tman1@g7-12:~/tmp/lab0$ ls -l ~/tmp/lab
+lab0/ lab8/ 
+tman1@g7-12:~/tmp/lab0$ ls -l ~/tmp/lab0/lab0.log lab0.log lab0.log [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+-rw-r--r-- 1 tman1 tman1 402833 Jan 23 15:43 /home/tman1/tmp/lab0/lab0.log
+tman1@g7-12:~/tmp/lab0$ cd [K[K[Kcd ~/i240b
+tman1@g7-12:~/i240b$ mv ~/tmp/lab0/lab0.log [K[K[K[K[K[K[K[K[K submit/
+tman1@g7-12:~/i240b$ ls
+README.md  submit
+tman1@g7-12:~/i240b$ cd submit/
+tman1@g7-12:~/i240b/submit$ ls
+lab0
+tman1@g7-12:~/i240b/submit$ cd ~/i240b/
+tman1@g7-12:~/i240b$ git branch -l
+[?1h=* [32mlab0[m[m
+  master[m[m
+[K[?1l>tman1@g7-12:~/i240b$ git merge -m "mergeed[K[Kd master" master
+Already up to date.
+tman1@g7-12:~/i240b$ git add submit/lab0/lab0.log [K[K[K[K[K[K[K[K[Kd[Kd[K
+tman1@g7-12:~/i240b$ ls
+README.md  submit
+tman1@g7-12:~/i240b$ git status
+On branch lab0
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   submit/lab0/lab0.log[m
+
+tman1@g7-12:~/i240b$ git status -s
+[32mA[m  submit/lab0/lab0.log
+tman1@g7-12:~/i240b$ git[K[K[Kgit commit -a -m "completing lab0"
+[lab0 eef13f0] completing lab0
+ Committer: Tony Man <tman1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3916 insertions(+)
+ create mode 100644 submit/lab0/lab0.log
+tman1@g7-12:~/i240b$ git push -u origin lab0
+Username for 'https://github.com': tman1@binghamton.edu
+Password for 'https://tman1@binghamton.edu@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/tman1bing/i240b.git/'
+tman1@g7-12:~/i240b$ ls
+README.md  submit
+tman1@g7-12:~/i240b$ git push -u[K[K[K[K[K[K[K[K[K[K[Ks[Kman git commit
+[?1049h[22;0;0t[?1h=GIT-COMMIT(1)                     Git Manual                     GIT-COMMIT(1)[m
+[m
+[1mNAME[0m[m
+       git-commit - Record changes to the repository[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mcommit[24m [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend][m
+                  [--dry-run] [(-c | -C | --fixup | --squash) <commit>][m
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty][m
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>][m
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status][m
+                  [-i | -o] [-S[<keyid>]] [--] [<file>...][m
+[m
+[1mDESCRIPTION[0m[m
+       Stores the current contents of the index in a new commit along with a[m
+       log message from the user describing the changes.[m
+[m
+       The content to be added can be specified in several ways:[m
+[m
+        1. by using [4mgit[24m [4madd[24m to incrementally "add" changes to the index before[m
+           using the [4mcommit[24m command (Note: even modified files must be[m
+           "added");[m
+[m
+        2. by using [4mgit[24m [4mrm[24m to remove files from the working tree and the[m
+           index, again before using the [4mcommit[24m command;[m
+[m
+        3. by listing files as arguments to the [4mcommit[24m command (without[m
+           --interactive or --patch switch), in which case the commit will[m
+           ignore changes staged in the index, and instead record the current[m
+           content of the listed files (which must already be known to Git);[m
+[m
+        4. by using the -a switch with the [4mcommit[24m command to automatically[m
+           "add" changes from all known files (i.e. all files that are already[m
+           listed in the index) and to automatically "rm" files in the index[m
+           that have been removed from the working tree, and then perform the[m
+           actual commit;[m
+[m
+        5. by using the --interactive or --patch switches with the [4mcommit[24m[m
+           command to decide one by one which files or hunks should be part of[m
+           the commit in addition to contents in the index, before finalizing[m
+           the operation. See the “Interactive Mode” section of [1mgit-add[0m(1) to[m
+           learn how to operate these modes.[m
+[m
+       The [1m--dry-run[0m option can be used to obtain a summary of what is[m
+       included by any of the above for the next commit by giving the same set[m
+       of parameters (options and paths).[m
+[m
+       If you make a commit and then find a mistake immediately after that,[m
+[7m Manual page git-commit(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       you can recover from it with [4mgit[24m [4mreset[24m.[m
+[7m Manual page git-commit(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-commit(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7m Manual page git-commit(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -a, --all[m
+[7m Manual page git-commit(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Tell the command to automatically stage files that have been[m
+[7m Manual page git-commit(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           modified and deleted, but new files you have not told Git about are[m
+[7m Manual page git-commit(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           not affected.[m
+[7m Manual page git-commit(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-commit(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -p, --patch[m
+[7m Manual page git-commit(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Use the interactive patch selection interface to chose which[m
+[7m Manual page git-commit(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           changes to commit. See [1mgit-add[0m(1) for details.[m
+[7m Manual page git-commit(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-commit(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -C <commit>, --reuse-message=<commit>[m
+[7m Manual page git-commit(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Take an existing commit object, and reuse the log message and the[m
+[7m Manual page git-commit(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           authorship information (including the timestamp) when creating the[m
+[7m Manual page git-commit(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           commit.[m
+[7m Manual page git-commit(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-commit(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -c <commit>, --reedit-message=<commit>[m
+[7m Manual page git-commit(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Like [4m-C[24m, but with [1m-c[0m the editor is invoked, so that the user can[m
+[7m Manual page git-commit(1) line 20 (press h for help or q to quit)[27m[K[K [KZZ[KZZ[K[?1l>[?1049l[23;0;0ttman1@g7-12:~/i240b$ git push -u origin lab0[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kman git push
+[?1049h[22;0;0t[?1h=GIT-PUSH(1)                       Git Manual                       GIT-PUSH(1)[m
+[m
+[1mNAME[0m[m
+       git-push - Update remote refs along with associated objects[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mpush[24m [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --d[m ry-run] [--receive-pack=<git-receive-pack>][m
+                  [--repo=<repository>] [-f | --force] [-d | --delete] [--prune][m  [-v | --verbose][m
+                  [-u | --set-upstream] [-o <string> | --push-option=<string>][m
+                  [--[no-]signed|--signed=(true|false|if-asked)][m
+                  [--force-with-lease[=<refname>[:<expect>]]][m
+                  [--no-verify] [<repository> [<refspec>...]][m
+[m
+[1mDESCRIPTION[0m[m
+       Updates remote refs using local refs, while sending objects necessary[m
+       to complete the given refs.[m
+[m
+       You can make interesting things happen to a repository every time you[m
+       push into it, by setting up [4mhooks[24m there. See documentation for [1mgit-[0m[m
+       [1mreceive-pack[0m(1).[m
+[m
+       When the command line does not specify where to push with the[m
+       [1m<repository>[0m argument, [1mbranch.*.remote[0m configuration for the current[m
+       branch is consulted to determine where to push. If the configuration is[m
+       missing, it defaults to [4morigin[24m.[m
+[m
+       When the command line does not specify what to push with [1m<refspec>...[0m[m
+       arguments or [1m--all[0m, [1m--mirror[0m, [1m--tags[0m options, the command finds the[m
+       default [1m<refspec>[0m by consulting [1mremote.*.push[0m configuration, and if it[m
+       is not found, honors [1mpush.default[0m configuration to decide what to push[m
+       (See [1mgit-config[0m(1) for the meaning of [1mpush.default[0m).[m
+[m
+       When neither the command-line nor the configuration specify what to[m
+       push, the default behavior is used, which corresponds to the [1msimple[0m[m
+       value for [1mpush.default[0m: the current branch is pushed to the[m
+       corresponding upstream branch, but as a safety measure, the push is[m
+       aborted if the upstream branch does not have the same name as the local[m
+       one.[m
+[m
+[1mOPTIONS[0m[m
+       <repository>[m
+           The "remote" repository that is destination of a push operation.[m
+           This parameter can be either a URL (see the section GIT URLS below)[m
+           or the name of a remote (see the section REMOTES below).[m
+[m
+       <refspec>...[m
+[7m Manual page git-push(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specify what destination ref to update with what source object. The[m
+[7m Manual page git-push(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           format of a <refspec> parameter is an optional plus [1m+[0m, followed by[m
+[7m Manual page git-push(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the source object <src>, followed by a colon [1m:[0m, followed by the[m
+[7m Manual page git-push(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           destination ref <dst>.[m
+[7m Manual page git-push(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The <src> is often the name of the branch you would want to push,[m
+[7m Manual page git-push(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           but it can be any arbitrary "SHA-1 expression", such as [1mmaster~4[0m or[m
+[7m Manual page git-push(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mHEAD[0m (see [1mgitrevisions[0m(7)).[m
+[7m Manual page git-push(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The <dst> tells which ref on the remote side is updated with this[m
+[7m Manual page git-push(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           push. Arbitrary expressions cannot be used here, an actual ref must[m
+[7m Manual page git-push(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           be named. If [1mgit[0m [1mpush[0m [1m[<repository>][0m without any [1m<refspec>[0m argument[m
+[7m Manual page git-push(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           is set to update some ref at the destination with [1m<src>[0m with[m
+[7m Manual page git-push(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mremote.<repository>.push[0m configuration variable, [1m:<dst>[0m part can be[m
+[7m Manual page git-push(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           omitted—such a push will update a ref that [1m<src>[0m normally updates[m
+[7m Manual page git-push(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           without any [1m<refspec>[0m on the command line. Otherwise, missing[m
+[7m Manual page git-push(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m:<dst>[0m means to update the same ref as the [1m<src>[0m.[m
+[7m Manual page git-push(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The object referenced by <src> is used to update the <dst>[m
+[7m Manual page git-push(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           reference on the remote side. Whether this is allowed depends on[m
+[7m Manual page git-push(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           where in [1mrefs/*[0m the <dst> reference lives as described in detail[m
+[7m Manual page git-push(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           below, in those sections "update" means any modifications except[m
+[7m Manual page git-push(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           deletes, which as noted after the next few sections are treated[m
+[7m Manual page git-push(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           differently.[m
+[7m Manual page git-push(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The [1mrefs/heads/*[0m namespace will only accept commit objects, and[m
+[7m Manual page git-push(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           updates only if they can be fast-forwarded.[m
+[7m Manual page git-push(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The [1mrefs/tags/*[0m namespace will accept any kind of object (as[m
+[7m Manual page git-push(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           commits, trees and blobs can be tagged), and any updates to them[m
+[7m Manual page git-push(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           will be rejected.[m
+[7m Manual page git-push(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           It’s possible to push any type of object to any namespace outside[m
+[7m Manual page git-push(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           of [1mrefs/{tags,heads}/*[0m. In the case of tags and commits, these will[m
+[7m Manual page git-push(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           be treated as if they were the commits inside [1mrefs/heads/*[0m for the[m
+[7m Manual page git-push(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           purposes of whether the update is allowed.[m
+[7m Manual page git-push(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           I.e. a fast-forward of commits and tags outside [1mrefs/{tags,heads}/*[0m[m
+[7m Manual page git-push(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           is allowed, even in cases where what’s being fast-forwarded is not[m
+[7m Manual page git-push(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           a commit, but a tag object which happens to point to a new commit[m
+[7m Manual page git-push(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           which is a fast-forward of the commit the last tag (or commit) it’s[m
+[7m Manual page git-push(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           replacing. Replacing a tag with an entirely different tag is also[m
+[7m Manual page git-push(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           allowed, if it points to the same commit, as well as pushing a[m
+[7m Manual page git-push(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           peeled tag, i.e. pushing the commit that existing tag object points[m
+[7m Manual page git-push(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           to, or a new tag object which an existing commit points to.[m
+[7m Manual page git-push(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Tree and blob objects outside of [1mrefs/{tags,heads}/*[0m will be[m
+[7m Manual page git-push(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           treated the same way as if they were inside [1mrefs/tags/*[0m, any update[m
+[7m Manual page git-push(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           of them will be rejected.[m
+[7m Manual page git-push(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           All of the rules described above about what’s not allowed as an[m
+[7m Manual page git-push(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           update can be overridden by adding an the optional leading [1m+[0m to a[m
+[7m Manual page git-push(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           refspec (or using [1m--force[0m command line option). The only exception[m
+[7m Manual page git-push(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           to this is that no amount of forcing will make the [1mrefs/heads/*[0m[m
+[7m Manual page git-push(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           namespace accept a non-commit object. Hooks and configuration can[m
+[7m Manual page git-push(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           also override or amend these rules, see e.g.[m
+[7m Manual page git-push(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mreceive.denyNonFastForwards[0m in [1mgit-config[0m(1) and [1mpre-receive[0m and[m
+[7m Manual page git-push(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1mupdate[0m in [1mgithooks[0m(5).[m
+[7m Manual page git-push(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Pushing an empty <src> allows you to delete the <dst> ref from the[m
+[7m Manual page git-push(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           remote repository. Deletions are always accepted without a leading[m
+[7m Manual page git-push(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m+[0m in the refspec (or [1m--force[0m), except when forbidden by[m
+[7m Manual page git-push(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           configuration or hooks. See [1mreceive.denyDeletes[0m in [1mgit-config[0m(1)[m
+[7m Manual page git-push(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           and [1mpre-receive[0m and [1mupdate[0m in [1mgithooks[0m(5).[m
+[7m Manual page git-push(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-push(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The special refspec [1m:[0m (or [1m+:[0m to allow non-fast-forward updates)[m
+[7m Manual page git-push(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           directs Git to push "matching" branches: for every branch that[m
+[7m Manual page git-push(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exists on the local side, the remote side is updated if a branch of[m
+[7m Manual page git-push(1) line 67 (press h for help or q to quit)[27m[K[K           the same name already exists on the remote side.[m
+[m
+           [1mtag[0m [1m<tag>[0m means the same as [1mrefs/tags/<tag>:refs/tags/<tag>[0m.[m
+[m
+       --all[m
+           Push all branches (i.e. refs under [1mrefs/heads/[0m); cannot be used[m
+           with other <refspec>.[m
+[m
+       --prune[m
+           Remove remote branches that don’t have a local counterpart. For[m
+           example a remote branch [1mtmp[0m will be removed if a local branch with[m
+           the same name doesn’t exist any more. This also respects refspecs,[m
+           e.g.  [1mgit[0m [1mpush[0m [1m--prune[0m [1mremote[0m [1mrefs/heads/*:refs/tmp/*[0m would make[m
+           sure that remote [1mrefs/tmp/foo[0m will be removed if [1mrefs/heads/foo[0m[m
+           doesn’t exist.[m
+[m
+       --mirror[m
+           Instead of naming each ref to push, specifies that all refs under[m
+           [1mrefs/[0m (which includes but is not limited to [1mrefs/heads/[0m,[m
+           [1mrefs/remotes/[0m, and [1mrefs/tags/[0m) be mirrored to the remote[m
+           repository. Newly created local refs will be pushed to the remote[m
+           end, locally updated refs will be force updated on the remote end,[m
+           and deleted refs will be removed from the remote end. This is the[m
+           default if the configuration option [1mremote.<remote>.mirror[0m is set.[m
+[m
+[7m Manual page git-push(1) line 92 (press h for help or q to quit)[27m[K[K       -n, --dry-run[m
+           Do everything except actually send the updates.[m
+[m
+       --porcelain[m
+           Produce machine-readable output. The output status line for each[m
+           ref will be tab-separated and sent to stdout instead of stderr. The[m
+           full symbolic names of the refs will be given.[m
+[m
+       -d, --delete[m
+           All listed refs are deleted from the remote repository. This is the[m
+           same as prefixing all refs with a colon.[m
+[m
+       --tags[m
+           All refs under [1mrefs/tags[0m are pushed, in addition to refspecs[m
+           explicitly listed on the command line.[m
+[m
+       --follow-tags[m
+           Push all the refs that would be pushed without this option, and[m
+           also push annotated tags in [1mrefs/tags[0m that are missing from the[m
+           remote but are pointing at commit-ish that are reachable from the[m
+           refs being pushed. This can also be specified with configuration[m
+           variable [1mpush.followTags[0m. For more information, see [1mpush.followTags[0m[m
+           in [1mgit-config[0m(1).[m
+[m
+       --[no-]signed, --signed=(true|false|if-asked)[m
+[7m Manual page git-push(1) line 117 (press h for help or q to quit)[27m[K[K           GPG-sign the push request to update refs on the receiving side, to[m
+           allow it to be checked by the hooks and/or be logged. If [1mfalse[0m or[m
+           [1m--no-signed[0m, no signing will be attempted. If [1mtrue[0m or [1m--signed[0m, the[m
+           push will fail if the server does not support signed pushes. If set[m
+           to [1mif-asked[0m, sign if and only if the server supports signed pushes.[m
+           The push will also fail if the actual call to [1mgpg[0m [1m--sign[0m fails. See[m
+           [1mgit-receive-pack[0m(1) for the details on the receiving end.[m
+[m
+       --[no-]atomic[m
+           Use an atomic transaction on the remote side if available. Either[m
+           all refs are updated, or on error, no refs are updated. If the[m
+           server does not support atomic pushes the push will fail.[m
+[m
+       -o <option>, --push-option=<option>[m
+           Transmit the given string to the server, which passes them to the[m
+           pre-receive as well as the post-receive hook. The given string must[m
+           not contain a NUL or LF character. When multiple[m
+           [1m--push-option=<option>[0m are given, they are all sent to the other[m
+           side in the order listed on the command line. When no[m
+           [1m--push-option=<option>[0m is given from the command line, the values[m
+           of configuration variable [1mpush.pushOption[0m are used instead.[m
+[m
+       --receive-pack=<git-receive-pack>, --exec=<git-receive-pack>[m
+           Path to the [4mgit-receive-pack[24m program on the remote end. Sometimes[m
+           useful when pushing to a remote repository over ssh, and you do not[m
+[7m Manual page git-push(1) line 142 (press h for help or q to quit)[27m[K[K           have the program in a directory on the default $PATH.[m
+[m
+       --[no-]force-with-lease, --force-with-lease=<refname>,[m
+       --force-with-lease=<refname>:<expect>[m
+           Usually, "git push" refuses to update a remote ref that is not an[m
+           ancestor of the local ref used to overwrite it.[m
+[m
+           This option overrides this restriction if the current value of the[m
+           remote ref is the expected value. "git push" fails otherwise.[m
+[m
+           Imagine that you have to rebase what you have already published.[m
+           You will have to bypass the "must fast-forward" rule in order to[m
+           replace the history you originally published with the rebased[m
+           history. If somebody else built on top of your original history[m
+           while you are rebasing, the tip of the branch at the remote may[m
+           advance with her commit, and blindly pushing with [1m--force[0m will lose[m
+           her work.[m
+[m
+           This option allows you to say that you expect the history you are[m
+           updating is what you rebased and want to replace. If the remote ref[m
+           still points at the commit you specified, you can be sure that no[m
+           other people did anything to the ref. It is like taking a "lease"[m
+           on the ref without explicitly locking it, and the remote ref is[m
+           updated only if the "lease" is still valid.[m
+[m
+[7m Manual page git-push(1) line 167 (press h for help or q to quit)[27m[K[K/[Kuu[K[1;1H           [1m--no-signed[0m, no signing will be attempted. If [1mtrue[0m or [1m--signed[0m, the[m
+[2;1H           push will fail if the server does not support signed pushes. If set[m
+[3;1H           to [1mif-asked[0m, sign if and only if the server supports signed pushes.[m
+[4;1H           The push will also fail if the actual call to [1mgpg[0m [1m--sign[0m fails. See[m
+[5;1H           [1mgit-receive-pack[0m(1) for the details on the receiving end.[m
+[6;1H[m
+[7;1H       --[no-]atomic[m
+[8;1H           Use an atomic transaction on the remote side if available. Either[m
+[9;1H           all refs are updated, or on error, no refs are updated. If the[m
+[10;1H           server does not support atomic pushes the push will fail.[m
+[11;1H[m
+[12;1H       -o <option>, --push-option=<option>[m
+[13;1H           Transmit the given string to the server, which passes them to the[m
+[14;1H           pre-receive as well as the post-receive hook. The given string must[m
+[15;1H           not contain a NUL or LF character. When multiple[m
+[16;1H           [1m--push-option=<option>[0m are given, they are all sent to the other[m
+[17;1H           side in the order listed on the command line. When no[m
+[18;1H           [1m--push-option=<option>[0m is given from the command line, the values[m
+[19;1H           of configuration variable [1mpush.pushOption[0m are used instead.[m
+[20;1H[m
+[21;1H       --receive-pack=<git-receive-pack>, --exec=<git-receive-pack>[m
+[22;1H           Path to the [4mgit-receive-pack[24m program on the remote end. Sometimes[m
+[23;1H           useful when pushing to a remote repository over ssh, and you do not[m
+[24;1H           have the program in a directory on the default $PATH.[m
+[25;1H[m
+[26;1H       --[no-]force-with-lease, --force-with-lease=<refname>,[m
+[27;1H       --force-with-lease=<refname>:<expect>[m
+[28;1H           Usually, "git push" refuses to update a remote ref that is not an[m
+[29;1H           ancestor of the local ref used to overwrite it.[m
+[30;1H[m
+[31;1H           This option overrides this restriction if the current value of the[m
+[32;1H           remote ref is the expected value. "git push" fails otherwise.[m
+[33;1H[m
+[34;1H           Imagine that you have to rebase what you have already published.[m
+[35;1H           You will have to bypass the "must fast-forward" rule in order to[m
+[36;1H           replace the history you originally published with the rebased[m
+[37;1H           history. If somebody else built on top of your original history[m
+[38;1H           while you are rebasing, the tip of the branch at the remote may[m
+[39;1H           advance with her commit, and blindly pushing with [1m--force[0m will lose[m
+[40;1H           her work.[m
+[41;1H[m
+[42;1H           This option allows you to say that you expect the history you are[m
+[43;1H           updating is what you rebased and want to replace. If the remote ref[m
+[44;1H           still points at the commit you specified, you can be sure that no[m
+[45;1H           other people did anything to the ref. It is like taking a "lease"[m
+[46;1H           on the ref without explicitly locking it, and the remote ref is[m
+[47;1H           updated only if the "lease" is still valid.[m
+[48;1H[m
+[49;1H[1;1H           [1m--no-signed[0m, no signing will be attempted. If [1mtr[0m[1m[7mu[27m[0m[1me[0m or [1m--signed[0m, the[m
+[2;1H           p[7mu[27msh will fail if the server does not s[7mu[27mpport signed p[7mu[27mshes. If set[m
+[3;1H           to [1mif-asked[0m, sign if and only if the server s[7mu[27mpports signed p[7mu[27mshes.[m
+[4;1H           The p[7mu[27msh will also fail if the act[7mu[27mal call to [1mgpg[0m [1m--sign[0m fails. See[m
+[5;1H           [1mgit-receive-pack[0m(1) for the details on the receiving end.[m
+[6;1H[m
+[7;1H       --[no-]atomic[m
+[8;1H           [7mU[27mse an atomic transaction on the remote side if available. Either[m
+[9;1H           all refs are [7mu[27mpdated, or on error, no refs are [7mu[27mpdated. If the[m
+[10;1H           server does not s[7mu[27mpport atomic p[7mu[27mshes the p[7mu[27msh will fail.[m
+[11;1H[m
+[12;1H       -o <option>, --p[7mu[27msh-option=<option>[m
+[13;1H           Transmit the given string to the server, which passes them to the[m
+[14;1H           pre-receive as well as the post-receive hook. The given string m[7mu[27mst[m
+[15;1H           not contain a N[7mU[27mL or LF character. When m[7mu[27mltiple[m
+[16;1H           [1m--p[0m[1m[7mu[27m[0m[1msh-option=<option>[0m are given, they are all sent to the other[m
+[17;1H           side in the order listed on the command line. When no[m
+[18;1H           [1m--p[0m[1m[7mu[27m[0m[1msh-option=<option>[0m is given from the command line, the val[7mu[27mes[m
+[19;1H           of config[7mu[27mration variable [1mp[0m[1m[7mu[27m[0m[1msh.p[0m[1m[7mu[27m[0m[1mshOption[0m are [7mu[27msed instead.[m
+[20;1H[m
+[21;1H       --receive-pack=<git-receive-pack>, --exec=<git-receive-pack>[m
+[22;1H           Path to the [4mgit-receive-pack[24m program on the remote end. Sometimes[m
+[23;1H           [7mu[27msef[7mu[27ml when p[7mu[27mshing to a remote repository over ssh, and yo[7mu[27m do not[m
+[24;1H           have the program in a directory on the defa[7mu[27mlt $PATH.[m
+[25;1H[m
+[26;1H       --[no-]force-with-lease, --force-with-lease=<refname>,[m
+[27;1H       --force-with-lease=<refname>:<expect>[m
+[28;1H           [7mU[27ms[7mu[27mally, "git p[7mu[27msh" ref[7mu[27mses to [7mu[27mpdate a remote ref that is not an[m
+[29;1H           ancestor of the local ref [7mu[27msed to overwrite it.[m
+[30;1H[m
+[31;1H           This option overrides this restriction if the c[7mu[27mrrent val[7mu[27me of the[m
+[32;1H           remote ref is the expected val[7mu[27me. "git p[7mu[27msh" fails otherwise.[m
+[33;1H[m
+[34;1H           Imagine that yo[7mu[27m have to rebase what yo[7mu[27m have already p[7mu[27mblished.[m
+[35;1H           Yo[7mu[27m will have to bypass the "m[7mu[27mst fast-forward" r[7mu[27mle in order to[m
+[36;1H           replace the history yo[7mu[27m originally p[7mu[27mblished with the rebased[m
+[37;1H           history. If somebody else b[7mu[27milt on top of yo[7mu[27mr original history[m
+[38;1H           while yo[7mu[27m are rebasing, the tip of the branch at the remote may[m
+[39;1H           advance with her commit, and blindly p[7mu[27mshing with [1m--force[0m will lose[m
+[40;1H           her work.[m
+[41;1H[m
+[42;1H           This option allows yo[7mu[27m to say that yo[7mu[27m expect the history yo[7mu[27m are[m
+[43;1H           [7mu[27mpdating is what yo[7mu[27m rebased and want to replace. If the remote ref[m
+[44;1H           still points at the commit yo[7mu[27m specified, yo[7mu[27m can be s[7mu[27mre that no[m
+[45;1H           other people did anything to the ref. It is like taking a "lease"[m
+[46;1H           on the ref witho[7mu[27mt explicitly locking it, and the remote ref is[m
+[47;1H           [7mu[27mpdated only if the "lease" is still valid.[m
+[48;1H[m
+[49;1H[K[7m Manual page git-push(1) line 167 (press h for help or q to quit)[27m[K[K/[K--[Kuu[K[1;1H           [1m--no-signed[0m, no signing will be attempted. If [1mtrue[0m or [1m--signed[0m, the[m
+[2;1H           push will fail if the server does not support signed pushes. If set[m
+[3;1H           to [1mif-asked[0m, sign if and only if the server supports signed pushes.[m
+[4;1H           The push will also fail if the actual call to [1mgpg[0m [1m--sign[0m fails. See[m
+[5;1H           [1mgit-receive-pack[0m(1) for the details on the receiving end.[m
+[6;1H[m
+[7;1H       --[no-]atomic[m
+[8;1H           Use an atomic transaction on the remote side if available. Either[m
+[9;1H           all refs are updated, or on error, no refs are updated. If the[m
+[10;1H           server does not support atomic pushes the push will fail.[m
+[11;1H[m
+[12;1H       -o <option>, --push-option=<option>[m
+[13;1H           Transmit the given string to the server, which passes them to the[m
+[14;1H           pre-receive as well as the post-receive hook. The given string must[m
+[15;1H           not contain a NUL or LF character. When multiple[m
+[16;1H           [1m--push-option=<option>[0m are given, they are all sent to the other[m
+[17;1H           side in the order listed on the command line. When no[m
+[18;1H           [1m--push-option=<option>[0m is given from the command line, the values[m
+[19;1H           of configuration variable [1mpush.pushOption[0m are used instead.[m
+[20;1H[m
+[21;1H       --receive-pack=<git-receive-pack>, --exec=<git-receive-pack>[m
+[22;1H           Path to the [4mgit-receive-pack[24m program on the remote end. Sometimes[m
+[23;1H           useful when pushing to a remote repository over ssh, and you do not[m
+[24;1H           have the program in a directory on the default $PATH.[m
+[25;1H[m
+[26;1H       --[no-]force-with-lease, --force-with-lease=<refname>,[m
+[27;1H       --force-with-lease=<refname>:<expect>[m
+[28;1H           Usually, "git push" refuses to update a remote ref that is not an[m
+[29;1H           ancestor of the local ref used to overwrite it.[m
+[30;1H[m
+[31;1H           This option overrides this restriction if the current value of the[m
+[32;1H           remote ref is the expected value. "git push" fails otherwise.[m
+[33;1H[m
+[34;1H           Imagine that you have to rebase what you have already published.[m
+[35;1H           You will have to bypass the "must fast-forward" rule in order to[m
+[36;1H           replace the history you originally published with the rebased[m
+[37;1H           history. If somebody else built on top of your original history[m
+[38;1H           while you are rebasing, the tip of the branch at the remote may[m
+[39;1H           advance with her commit, and blindly pushing with [1m--force[0m will lose[m
+[40;1H           her work.[m
+[41;1H[m
+[42;1H           This option allows you to say that you expect the history you are[m
+[43;1H           updating is what you rebased and want to replace. If the remote ref[m
+[44;1H           still points at the commit you specified, you can be sure that no[m
+[45;1H           other people did anything to the ref. It is like taking a "lease"[m
+[46;1H           on the ref without explicitly locking it, and the remote ref is[m
+[47;1H           updated only if the "lease" is still valid.[m
+[48;1H[m
+[49;1H[1;1H           [1m--no-signed[0m, no signing will be attempted. If [1mtrue[0m or [1m--signed[0m, the[m
+[2;1H           push will fail if the server does not support signed pushes. If set[m
+[3;1H           to [1mif-asked[0m, sign if and only if the server supports signed pushes.[m
+[4;1H           The push will also fail if the actual call to [1mgpg[0m [1m--sign[0m fails. See[m
+[5;1H           [1mgit-receive-pack[0m(1) for the details on the receiving end.[m
+[6;1H[m
+[7;1H       --[no-]atomic[m
+[8;1H           Use an atomic transaction on the remote side if available. Either[m
+[9;1H           all refs are updated, or on error, no refs are updated. If the[m
+[10;1H           server does not support atomic pushes the push will fail.[m
+[11;1H[m
+[12;1H       -o <option>, --push-option=<option>[m
+[13;1H           Transmit the given string to the server, which passes them to the[m
+[14;1H           pre-receive as well as the post-receive hook. The given string must[m
+[15;1H           not contain a NUL or LF character. When multiple[m
+[16;1H           [1m--push-option=<option>[0m are given, they are all sent to the other[m
+[17;1H           side in the order listed on the command line. When no[m
+[18;1H           [1m--push-option=<option>[0m is given from the command line, the values[m
+[19;1H           of configuration variable [1mpush.pushOption[0m are used instead.[m
+[20;1H[m
+[21;1H       --receive-pack=<git-receive-pack>, --exec=<git-receive-pack>[m
+[22;1H           Path to the [4mgit-receive-pack[24m program on the remote end. Sometimes[m
+[23;1H           useful when pushing to a remote repository over ssh, and you do not[m
+[24;1H           have the program in a directory on the default $PATH.[m
+[25;1H[m
+[26;1H       --[no-]force-with-lease, --force-with-lease=<refname>,[m
+[27;1H       --force-with-lease=<refname>:<expect>[m
+[28;1H           Usually, "git push" refuses to update a remote ref that is not an[m
+[29;1H           ancestor of the local ref used to overwrite it.[m
+[30;1H[m
+[31;1H           This option overrides this restriction if the current value of the[m
+[32;1H           remote ref is the expected value. "git push" fails otherwise.[m
+[33;1H[m
+[34;1H           Imagine that you have to rebase what you have already published.[m
+[35;1H           You will have to bypass the "must fast-forward" rule in order to[m
+[36;1H           replace the history you originally published with the rebased[m
+[37;1H           history. If somebody else built on top of your original history[m
+[38;1H           while you are rebasing, the tip of the branch at the remote may[m
+[39;1H           advance with her commit, and blindly pushing with [1m--force[0m will lose[m
+[40;1H           her work.[m
+[41;1H[m
+[42;1H           This option allows you to say that you expect the history you are[m
+[43;1H           updating is what you rebased and want to replace. If the remote ref[m
+[44;1H           still points at the commit you specified, you can be sure that no[m
+[45;1H           other people did anything to the ref. It is like taking a "lease"[m
+[46;1H           on the ref without explicitly locking it, and the remote ref is[m
+[47;1H           updated only if the "lease" is still valid.[m
+[48;1H[m
+[49;1H...skipping...
+       [7m-u[27m, --set[7m-u[27mpstream[m
+           For every branch that is up to date or successfully pushed, add[m
+           upstream (tracking) reference, used by argument-less [1mgit-pull[0m(1)[m
+           and other commands. For more information, see [1mbranch.<name>.merge[0m[m
+           in [1mgit-config[0m(1).[m
+[m
+       --[no-]thin[m
+           These options are passed to [1mgit-send-pack[0m(1). A thin transfer[m
+           significantly reduces the amount of sent data when the sender and[m
+           receiver share many of the same objects in common. The default is[m
+           [1m--thin[0m.[m
+[m
+       -q, --quiet[m
+           Suppress all output, including the listing of updated refs, unless[m
+           an error occurs. Progress is not reported to the standard error[m
+           stream.[m
+[m
+       -v, --verbose[m
+           Run verbosely.[m
+[m
+       --progress[m
+           Progress status is reported on the standard error stream by default[m
+       
