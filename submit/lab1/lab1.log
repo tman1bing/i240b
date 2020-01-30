@@ -1,0 +1,412 @@
+Script started on 2020-01-30 16:00:22-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="49"]
+bash: /home/umrigar/cs220/bin/student.rc: No such file or directory
+tman1@g7-15:~/i240b/submit/lab1$ ls
+exercises  lab1  lab1.html  lab1.log  lab1.pdf	lab1.umt
+tman1@g7-15:~/i240b/submit/lab1$ ls
+exercises  lab1  lab1.html  lab1.log  lab1.pdf	lab1.umt
+tman1@g7-15:~/i240b/submit/lab1$ cd exercises/
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/i240b/submit/lab1$ cd exercises/
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/i240b/submit/lab1$ cd exercises/0-hello/
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ ls
+hello  hello.cc
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ make clean
+make: *** No rule to make target 'clean'.  Stop.
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ make
+make: *** No targets specified and no makefile found.  Stop.
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ make
+make: *** No targets specified and no makefile found.  Stop.
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ rm helll[Ko
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ make
+make: *** No targets specified and no makefile found.  Stop.
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ ls
+hello.cc
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ make [K[K[K[K[Kls
+hello.cc
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ rm hello.cc 
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ ls
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ cd ..
+tman1@g7-15:~/i240b/submit/lab1/exercises$ ls
+0-hello       2-separate-compilation  4-dependencies
+1-monolithic  3-makefile	      5-auto-dependencies
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/
+cs220/    cs240/    i220b/    lab8.git/ 
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/
+cs220/    cs240/    i220b/    lab8.git/ 
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs2
+cs220/ cs240/ 
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs2
+cs220/ cs240/ 
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/
+announce.html  exams-quizzes/ hws/           misc/          umt.make
+announce.umt   exercises/     index.html     projects/      
+assets/        .git/          index.umt      README.md      
+docs/          .gitignore     labs/          slides/        
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/labs/
+index.html  index.umt   lab0/       lab1/       submission/ 
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/labs/lab1/
+exercises/  .gitignore  lab1/       lab1.html   lab1.pdf    lab1.umt
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/labs/lab1/
+exercises/  .gitignore  lab1/       lab1.html   lab1.pdf    lab1.umt
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/labs/lab1/exercises/
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/labs/lab1/exercises/0-hello/
+.gitignore  hello.cc    
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/labs/lab1/exercises/0-hello/hello.cc .[K./
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/labs/lab1/exercises/0-hello/hello.cc ./
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cp ~/git-repos/cs240/labs/lab1/exercises/0-hello/hello.cc ./0-hello/.gitignore [K[K[K[K[K[K[K[K[K[K[K
+tman1@g7-15:~/i240b/submit/lab1/exercises$ ls
+0-hello       2-separate-compilation  4-dependencies
+1-monolithic  3-makefile	      5-auto-dependencies
+tman1@g7-15:~/i240b/submit/lab1/exercises$ cd 0-hello/
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ l
+bash: l: command not found
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ s[Kls
+hello.cc
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ make hello
+g++     hello.cc   -o hello
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ ls
+hello  hello.cc
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ ./hello 
+hello world
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ cd ./[K./
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ cd ../
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ cd ../1-monolithic/fns-compare
+bash: cd: ../1-monolithic/fns-compare: Not a directory
+tman1@g7-15:~/i240b/submit/lab1/exercises/0-hello$ .[Kcd ../1-monolithic/fns-compare[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ ls
+fns-compare  fns-compare.cc  fns-compare.cc~
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ mak[K[K[Kls
+fns-compare  fns-compare.cc  fns-compare.cc~
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ make clean
+make: *** No rule to make target 'clean'.  Stop.
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ ma[K[Kls
+fns-compare  fns-compare.cc  fns-compare.cc~
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ rm fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ ls
+fns-compare.cc	fns-compare.cc~
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ g++ -g - [KWall -std=c++17  fns-compare.cc -o fns-compare.cc[K[K[K
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ ls
+fns-compare  fns-compare.cc  fns-compare.cc~
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ ./fns-compare 
+1 100000 1000
+10 1e+06 100000
+100 1e+07 1e+07
+1000 1e+08 1e+09
+10000 1e+09 1e+11
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ cd ../
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ cd ../2-separate-compilation/
+fns-compare     fns-compare.o   linear.o        quadratic.o
+fns-compare.cc  linear.cc       quadratic.cc    
+fns-compare.hh  linear.cc~      quadratic.cc~   
+tman1@g7-15:~/i240b/submit/lab1/exercises/1-monolithic$ cd ../2-separate-compilation/
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ ls
+fns-compare	fns-compare.hh	linear.cc   linear.o	  quadratic.cc~
+fns-compare.cc	fns-compare.o	linear.cc~  quadratic.cc  quadratic.o
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ make [K[K[K[K[Krm [K[K[Kg++ -g -Wall - std=c++17 -c fns-compare.cc 
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ g++ -g -Wall -std=c++17 -c fns-compare.cc [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klinear.cc
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ ls
+fns-compare	fns-compare.hh	linear.cc   linear.o	  quadratic.cc~
+fns-compare.cc	fns-compare.o	linear.cc~  quadratic.cc  quadratic.o
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ g++ fns-compare.
+fns-compare.cc  fns-compare.hh  fns-compare.o   
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ g++ fns-compare.
+fns-compare.cc  fns-compare.hh  fns-compare.o   
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ g++ fns-compare.o linear.o -o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ ./fns-compare  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+         n    linear
+         1     10000
+        10    100000
+       100     1e+06
+      1000     1e+07
+     10000     1e+08
+    100000     1e+09
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ g++ fns-compare.i[Ko linear.
+linear.cc   linear.cc~  linear.o    
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ g++ fns-compare.o linear.o quadratic.o -o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ ./fns-compare  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+         n    linear quadratic
+         1     10000      1000
+        10    100000    100000
+       100     1e+06     1e+07
+      1000     1e+07     1e+09
+     10000     1e+08     1e+11
+    100000     1e+09     1e+13
+tman1@g7-15:~/i240b/submit/lab1/exercises/2-separate-compilation$ cd ../3-makefile/
+tman1@g7-15:~/i240b/submit/lab1/exercises/3-makefile$ ls
+constant.cc	exponential.o	fns-compare.hh	 linear.cc  quadratic.cc
+constant.o	fact.cc		fns-compare.hh~  linear.o   quadratic.o
+cubic.cc	fact.o		fns-compare.o	 Makefile
+cubic.o		fns-compare	lg.cc		 nlg.cc
+exponential.cc	fns-compare.cc	lg.o		 nlg.o
+tman1@g7-15:~/i240b/submit/lab1/exercises/3-makefile$ make clean
+rm -f *~ *.o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/3-makefile$ make
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+[01m[Kfns-compare.cc:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kfns-compare.cc:29:20:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%Lg[m[K’ expects argument of type ‘[01m[Klong double[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K-Wformat=[m[K]
+       fprintf(out, [01;35m[K"%*.*Lg"[m[K, WIDTH, PREC, [32m[KfnInfo.fn(n)[m[K);
+                    [01;35m[K^~~~~~~~[m[K               [32m[K~~~~~~~~~~~~[m[K
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/3-makefile$ cd ../4-dependencies/
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ make
+make: Nothing to be done for 'all'.
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ make clean
+rm -f *~ *.o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ make
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ ./[K./
+0-hello/                2-separate-compilation/ 4-dependencies/
+1-monolithic/           3-makefile/             5-auto-dependencies/
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ ../
+0-hello/                2-separate-compilation/ 4-dependencies/
+1-monolithic/           3-makefile/             5-auto-dependencies/
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ ../5-auto-dependencies/
+bash: ../5-auto-dependencies/: Is a directory
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ make
+make: Nothing to be done for 'all'.
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ make clean
+rm -f *~ *.o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ make
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ vim[K[K[Kemacs Makefile 
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ make
+make: Nothing to be done for 'all'.
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ ./fns-compare 
+    n constant     log2   linear     n lg    quadr    cubic     expn     fact
+    1    1e+07        0    1e+05        0    1e+03    1e+02       20        1
+   10    1e+07  3.3e+06    1e+06  3.3e+05    1e+05    1e+05    1e+04  3.6e+06
+  100    1e+07  6.6e+06    1e+07  6.6e+06    1e+07    1e+08  1.3e+31 9.3e+157
+ 1000    1e+07    1e+07    1e+08    1e+08    1e+09    1e+11 1.1e+302      inf
+10000    1e+07  1.3e+07    1e+09  1.3e+09    1e+11    1e+14      inf      inf
+tman1@g7-15:~/i240b/submit/lab1/exercises/4-dependencies$ cd ../5-auto-dependencies/
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ ls
+constant.cc	exponential.o	fns-compare.hh	 linear.cc  quadratic.cc
+constant.o	fact.cc		fns-compare.o	 linear.o   quadratic.o
+cubic.cc	fact.o		fns-compare.tar  Makefile
+cubic.o		fns-compare	lg.cc		 nlg.cc
+exponential.cc	fns-compare.cc	lg.o		 nlg.o
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ make clean
+rm -rf *~ *.o fns-compare .deps
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ make
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+g++ -MT nlg.o -MMD -MP -MF .deps/nlg.d -g -Wall -std=c++17 -c nlg.cc
+g++ -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ -MT lg.o -MMD -MP -MF .deps/lg.d -g -Wall -std=c++17 -c lg.cc
+g++ -MT cubic.o -MMD -MP -MF .deps/cubic.d -g -Wall -std=c++17 -c cubic.cc
+g++ -MT exponential.o -MMD -MP -MF .deps/exponential.d -g -Wall -std=c++17 -c exponential.cc
+g++ -MT fns-compare.o -MMD -MP -MF .deps/fns-compare.d -g -Wall -std=c++17 -c fns-compare.cc
+g++ -MT constant.o -MMD -MP -MF .deps/constant.d -g -Wall -std=c++17 -c constant.cc
+g++ -MT quadratic.o -MMD -MP -MF .deps/quadratic.d -g -Wall -std=c++17 -c quadratic.cc
+g++ linear.o nlg.o fact.o lg.o cubic.o exponential.o fns-compare.o constant.o quadratic.o -o fns-compare
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ emacs Makefile 
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ ls
+constant.cc	exponential.o	fns-compare.hh	 linear.cc  quadratic.cc
+constant.o	fact.cc		fns-compare.o	 linear.o   quadratic.o
+cubic.cc	fact.o		fns-compare.tar  Makefile
+cubic.o		fns-compare	lg.cc		 nlg.cc
+exponential.cc	fns-compare.cc	lg.o		 nlg.o
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ ma[Kkdir -p ~/tmp/fns-compare/
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ cd ~/tmp/
+fns-compare/ lab8/        
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ cd ~/tmp/
+fns-compare/ lab8/        
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ cd ~/tmp/fns-compare/
+tman1@g7-15:~/tmp/fns-compare$ ls
+constant.cc	exponential.o	fns-compare.hh	linear.o      quadratic.o
+constant.o	fact.cc		fns-compare.o	Makefile
+cubic.cc	fact.o		lg.cc		nlg.cc
+cubic.o		fns-compare	lg.o		nlg.o
+exponential.cc	fns-compare.cc	linear.cc	quadratic.cc
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf ~/i240b//[Ksubmit/lab1/
+exercises/  lab1/       lab1.log    lab1.umt    
+.gitignore  lab1.html   lab1.pdf    
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf ~/i240b/submit/lab1/exercises/
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf ~/i240b/submit/lab1/exercises/5-auto-dependencies/8[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K*/fn[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd i240[K[K[K[K[K[K[Kls
+constant.cc	exponential.o	fns-compare.hh	linear.o      quadratic.o
+constant.o	fact.cc		fns-compare.o	Makefile
+cubic.cc	fact.o		lg.cc		nlg.cc
+cubic.o		fns-compare	lg.o		nlg.o
+exponential.cc	fns-compare.cc	linear.cc	quadratic.cc
+tman1@g7-15:~/tmp/fns-compare$ cd ~/
+.bash_history                    .local/
+.bashrc                          Music/
+.cache/                          p
+.config/                         p.cc
+cs220/                           Pictures/
+Desktop/                         .pki/
+dir/                             .practice.c.swp
+.dmrc                            .profile
+Documents/                       projects/
+.dosbox/                         Public/
+Downloads/                       .ssh/
+.emacs                           .swp
+.emacs.d/                        Templates/
+.forward                         tmp/
+git-repos/                       Videos/
+.gnome/                          .vim/
+.gnupg/                          .viminfo
+.gnuplot-wxt                     .Xauthority
+i220b/                           .xfce4-session.verbose-log
+i240b/                           .xfce4-session.verbose-log.last
+.ICEauthority                    .xsession-errors
+.lesshst                         .xsession-errors.old
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i2
+i220b/ i240b/ 
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i2
+i220b/ i240b/ 
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i240b/
+.git/       .gitignore  README.md   submit/     
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i240b/
+.git/       .gitignore  README.md   submit/     
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i240b/submit/lab
+lab0/ lab1/ 
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i240b/submit/lab1/
+exercises/  lab1/       lab1.log    lab1.umt    
+.gitignore  lab1.html   lab1.pdf    
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i240b/submit/lab1/
+exercises/  lab1/       lab1.log    lab1.umt    
+.gitignore  lab1.html   lab1.pdf    
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i240b/submit/lab1/exercises/
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i240b/submit/lab1/exercises/
+0-hello/                3-makefile/             .gitignore
+1-monolithic/           4-dependencies/         
+2-separate-compilation/ 5-auto-dependencies/    
+tman1@g7-15:~/tmp/fns-compare$ cd ~/i240b/submit/lab1/exercises/5-auto-dependencies/
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ ls
+constant.cc	exponential.o	fns-compare.hh	 linear.cc  quadratic.cc
+constant.o	fact.cc		fns-compare.o	 linear.o   quadratic.o
+cubic.cc	fact.o		fns-compare.tar  Makefile
+cubic.o		fns-compare	lg.cc		 nlg.cc
+exponential.cc	fns-compare.cc	lg.o		 nlg.o
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ mak [Ke dist
+tar -cf fns-compare.tar linear.cc nlg.cc fact.cc lg.cc cubic.cc exponential.cc fns-compare.cc constant.cc quadratic.cc fns-compare.hh Makefile
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ cd ~/tmp/
+fns-compare/ lab8/        
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ cd ~/tmp/fns-compare/
+constant.cc     exponential.o   fns-compare.o   nlg.cc
+constant.o      fact.cc         lg.cc           nlg.o
+cubic.cc        fact.o          lg.o            quadratic.cc
+cubic.o         fns-compare     linear.cc       quadratic.o
+.deps/          fns-compare.cc  linear.o        
+exponential.cc  fns-compare.hh  Makefile        
+tman1@g7-15:~/i240b/submit/lab1/exercises/5-auto-dependencies$ cd ~/tmp/fns-compare/
+tman1@g7-15:~/tmp/fns-compare$ ls
+constant.cc	exponential.o	fns-compare.hh	linear.o      quadratic.o
+constant.o	fact.cc		fns-compare.o	Makefile
+cubic.cc	fact.o		lg.cc		nlg.cc
+cubic.o		fns-compare	lg.o		nlg.o
+exponential.cc	fns-compare.cc	linear.cc	quadratic.cc
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf !i[K[K~/i2
+i220b/ i240b/ 
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf ~/i2
+i220b/ i240b/ 
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf ~/i240b/
+.git/       .gitignore  README.md   submit/     
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf ~/i240b/submit/labl1[K[K1/
+exercises/  lab1/       lab1.log    lab1.umt    
+.gitignore  lab1.html   lab1.pdf    
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf ~/i240b/submit/lab1/exercises/5*/home/tman1/i240b/submit/lab1/exercises/5-auto-dependencies/f
+fact.cc          fns-compare      fns-compare.hh   fns-compare.tar
+fact.o           fns-compare.cc   fns-compare.o    
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf /home/tman1/i240b/submit/lab1/exercises/5-auto-dependencies/f
+fact.cc          fns-compare      fns-compare.hh   fns-compare.tar
+fact.o           fns-compare.cc   fns-compare.o    
+tman1@g7-15:~/tmp/fns-compare$ tar -xvf /home/tman1/i240b/submit/lab1/exercises/5-auto-dependencies/fns0-[K[K0[K-compare.tar 
+linear.cc
+nlg.cc
+fact.cc
+lg.cc
+cubic.cc
+exponential.cc
+fns-compare.cc
+constant.cc
+quadratic.cc
+fns-compare.hh
+Makefile
+tman1@g7-15:~/tmp/fns-compare$ make
+make: Nothing to be done for 'all'.
+tman1@g7-15:~/tmp/fns-compare$ make clean
+rm -rf *~ *.o fns-compare .deps
+tman1@g7-15:~/tmp/fns-compare$ make
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+g++ -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ -MT nlg.o -MMD -MP -MF .deps/nlg.d -g -Wall -std=c++17 -c nlg.cc
+g++ -MT cubic.o -MMD -MP -MF .deps/cubic.d -g -Wall -std=c++17 -c cubic.cc
+g++ -MT exponential.o -MMD -MP -MF .deps/exponential.d -g -Wall -std=c++17 -c exponential.cc
+g++ -MT fns-compare.o -MMD -MP -MF .deps/fns-compare.d -g -Wall -std=c++17 -c fns-compare.cc
+g++ -MT constant.o -MMD -MP -MF .deps/constant.d -g -Wall -std=c++17 -c constant.cc
+g++ -MT quadratic.o -MMD -MP -MF .deps/quadratic.d -g -Wall -std=c++17 -c quadratic.cc
+g++ -MT lg.o -MMD -MP -MF .deps/lg.d -g -Wall -std=c++17 -c lg.cc
+g++ linear.o fact.o nlg.o cubic.o exponential.o fns-compare.o constant.o quadratic.o lg.o -o fns-compare
+tman1@g7-15:~/tmp/fns-compare$ ls
+constant.cc	exponential.o	fns-compare.hh	linear.o      quadratic.o
+constant.o	fact.cc		fns-compare.o	Makefile
+cubic.cc	fact.o		lg.cc		nlg.cc
+cubic.o		fns-compare	lg.o		nlg.o
+exponential.cc	fns-compare.cc	linear.cc	quadratic.cc
+tman1@g7-15:~/tmp/fns-compare$ cd ~/
+tman1@g7-15:~$ ls
+cs220	 Documents  i220b  p	     projects	tmp
+Desktop  Downloads  i240b  p.cc      Public	Videos
+dir	 git-repos  Music  Pictures  Templates
+tman1@g7-15:~$ exit
+exit
+
+Script done on 2020-01-30 16:09:31-05:00 [COMMAND_EXIT_CODE="0"]
