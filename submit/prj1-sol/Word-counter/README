@@ -1,4 +1,7 @@
 # Word-counter
+Author: Tony Man
+B00771526
+
 Simple word counting program written in c++.
 To be compiled via the command line with the usage: ./wordcounts MAX_N_OUT MIN_WORD_LEN MAX_WORD_LEN FILE...
   where MAX_N_OUT specifies the maximum number of words to be outputted
