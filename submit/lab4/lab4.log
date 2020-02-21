@@ -5327,3 +5327,64 @@ tman1@remote01:~/i240b/submit/lab4/exercises/3-expr$ exit
 exit
 
 Script done on 2020-02-20 23:24:11-05:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2020-02-21 02:49:29-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+bash: /home/umrigar/cs220/bin/student.rc: No such file or directory
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ make clean -f ../Makefile 
+rm -rf *.o *~ main .deps .gitignore
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ make clean -f ../Makefile [1P[1P[1P
+make: *** No rule to make target 'clean'.  Stop.
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ make clean ../Makefile [C[C[3@-f [C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P
+g++ -MT tostring.o -MMD -MP -MF .deps/tostring.d -g -Wall -std=c++17 -c tostring.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ -MT parse.o -MMD -MP -MF .deps/parse.d -g -Wall -std=c++17 -c parse.cc
+g++ -MT expr.o -MMD -MP -MF .deps/expr.d -g -Wall -std=c++17 -c expr.cc
+g++ tostring.o main.o parse.o expr.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main tostring.o main.o parse.o expr.o; do echo $t >>.gitignore; done
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ ./main '+ 1 * 2 3'  '* + 1 2 3'  '+ / 40 5 - 3 2'
+( 2 ) * ( 3 )
+( 1 ) + ( 6 )
+( 2 ) * ( 3 )
+7
+( 1 ) + ( 2 )
+( 3 ) * ( 3 )
+( 1 ) + ( 2 )
+9
+( 40 ) / ( 5 )
+( 3 ) - ( 2 )
+( 8 ) + ( 1 )
+( 40 ) / ( 5 )
+( 3 ) - ( 2 )
+9
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ ./main '+ 1 * 2 3'  '* + 1 2 3'  '+ / 40 5 - 3 2'[29Pmake -f ../Makefile [3@clean[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-f [C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[3@-f [C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[3P-f[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -MT expr.o -MMD -MP -MF .deps/expr.d -g -Wall -std=c++17 -c expr.cc
+g++ tostring.o main.o parse.o expr.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main tostring.o main.o parse.o expr.o; do echo $t >>.gitignore; done
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ make -f ../Makefile ./main '+ 1 * 2 3'  '* + 1 2 3'  '+ / 40 5 - 3 2'
+7
+9
+9
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$  ./main "+ 1 2" "- 3 4" "* 5 6" "/ 77 8"
+3
+-1
+30
+9
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ ./main "* + 1 2 4" \
+>          "- * 3 4 5" \
+>          "/ * 5 6 10" \
+>          "/ 77 + 8 5"
+12
+7
+3
+5
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$  ./main "+ + + / 22  6 * 5 3 - 2 5 * 3 5"
+Segmentation fault
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ exi
+bash: exi: command not found
+tman1@remote05:~/i240b/submit/lab4/exercises/3-expr$ exit
+exit
+
+Script done on 2020-02-21 02:50:50-05:00 [COMMAND_EXIT_CODE="127"]

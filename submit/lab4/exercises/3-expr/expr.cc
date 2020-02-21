@@ -151,14 +151,13 @@ static std::string
 binaryExprToString(std::string op, ExprPtr left, ExprPtr right)
 {
   std::stringstream s;
-  s << "( " << *left << " ) " << op << " ( " << *right << " )";
+  s << " ( " << *left << " ) " << op << " ( " << *right << " ) ";
   return s.str();
 }
 
 std::string
 AddExpr::toString() const
 {
-cout << binaryExprToString("+", left, right) << endl;
 string stri = to_string(evaluate(binaryExprToString("+", left, right)));
 return stri;  
 //return binaryExprToString("+", left, right);
@@ -167,7 +166,6 @@ return stri;
 std::string
 SubExpr::toString() const
 {
-cout << binaryExprToString("-", left, right) << endl;
 string stri = to_string(evaluate(binaryExprToString("-", left, right)));
 return stri; 
 }
@@ -175,7 +173,6 @@ return stri;
 std::string
 MulExpr::toString() const
 {
-cout << binaryExprToString("*", left, right) << endl;
 string stri = to_string(evaluate(binaryExprToString("*", left, right)));
 return stri; 
 }
@@ -183,7 +180,6 @@ return stri;
 std::string
 DivExpr::toString() const
 {
-cout << binaryExprToString("/", left, right) << endl;
 string stri = to_string(evaluate(binaryExprToString("/", left, right)));
 return stri; 
 }
