@@ -8,6 +8,7 @@
 
 
 class Expr : public ToString {
+	virtual int eval() {};
 };
 
 //ExprPtr is an alias for a smart shared ptr to an Expr.
