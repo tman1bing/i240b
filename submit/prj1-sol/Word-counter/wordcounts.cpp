@@ -13,6 +13,7 @@ void setup(int argc, char **argv);
 void readWordCounts(int argc, char **argv);
 bool compareCount(pair<string, int>a, pair<string, int>b);
 bool compareFirstLetter(pair<string, int>a, pair<string, int>b);
+bool compareCountThenLetter(pair<string, int>a, pair<string, int>b);
 
 int main(int argc, char **argv)
 {
@@ -98,50 +99,29 @@ void readWordCounts(int argc, char **argv)
 		}
 		file.close();
 	}
+
 	//vector of pairs initialized witih values of unordered_map words;
 	vector<pair<string, int>> v(words.begin(), words.end());
 	vector<pair<string, int>>::iterator vIterator = v.begin();
-	sort(v.begin(), v.end(), compareFirstLetter);
-	sort(v.begin(), v.end(), compareCount);
+	sort(v.begin(), v.end(), compareCountThenLetter);
 
-	//if there are less words across all files than the max num of words to be outputted;
-	if((unsigned int)atoi(argv[1]) > v.size())
+	for(unsigned int i = 0, j = 0; i < (unsigned int)atoi(argv[1]); j++)
 	{
-		for(unsigned int i = 0; i < v.size(); i++)
+		if((vIterator + j)->first.length() < (unsigned int)atoi(argv[2]) || (vIterator + j)->first.length() > (unsigned int)atoi(argv[3]))
 		{
-			//if string.length() < MIN_WORD_LEN OR > MAX_WORD_LEN, skip;
-			if((vIterator + i)->first.length() < (unsigned int)atoi(argv[2]) || (vIterator + i)->first.length() > (unsigned int)atoi(argv[3]))
-				continue;
+			if(vIterator + j == v.end())
+				break;
 			else
-				cout << (vIterator + i)->first << ": " << (vIterator + i)->second << endl;
+				continue;
 		}
-	}
-	else
-	{
-		for(unsigned int i = 0; i < (unsigned int)atoi(argv[1]); i++)
-		{
-			if((vIterator + i)->first.length() < (unsigned int)atoi(argv[2]) || (vIterator + i)->first.length() > (unsigned int)atoi(argv[3]))
-			{
-				if(vIterator + i == v.end())
-					break;
-				else
-					continue;
-			}
-			cout << (vIterator + i)->first << ": " << (vIterator + i)->second << endl;
-		}
+		cout << (vIterator + j)->first << ": " << (vIterator + j)->second << endl;
+		i++;
 	}
 }
 
 //compare the second value (the int value in the pair);
 //sort in descending order;
-bool compareCount(pair<string, int>a, pair<string, int>b)
+bool compareCountThenLetter(pair<string, int>a, pair<string, int>b)
 {
-	return a.second > b.second;
-}
-
-//compare the first value (the string value in the pair);
-//sort in alphabetical order;
-bool compareFirstLetter(pair<string, int>a, pair<string, int>b)
-{
-	return a.first < b.first;
+	return (a.second > b.second) || (a.second == b.second && a.first < b.first);
 }
