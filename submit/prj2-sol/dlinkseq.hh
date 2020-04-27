@@ -20,7 +20,7 @@ class DLinkSeq: public Seq<E>
 		DLinkSeq<E>* prev;
 		E data;
 		friend class DLinkSeqConstIter<E>;
-	
+
 		//constructor;
 		DLinkSeq(){next = prev = nullptr;}
 		DLinkSeq(E e) : data(e){next = prev = nullptr;}
@@ -28,8 +28,12 @@ class DLinkSeq: public Seq<E>
 		//destructor;
 		~DLinkSeq() {}
 
+		static SeqPtr<E> make() 
+		{
+			return make_unique<DLinkSeq<E>>();
+		}
+
 		//frees up all memory;
-		//cannot use DLinkSeq after call to clear because static head is deleted;
 		void clear()
 		{
 			if(head != nullptr)
@@ -38,7 +42,7 @@ class DLinkSeq: public Seq<E>
 					head = head->prev;
 					delete head->next;
 				}
-			delete head;
+			head = nullptr;
 		}
 
 		void unshift(const E& item)
@@ -87,6 +91,8 @@ class DLinkSeq: public Seq<E>
 				temp = curr->data;
 				if(curr->next != nullptr)
 					curr->next->prev = nullptr;
+				if(curr == head)
+					head = nullptr;
 				delete curr;
 				return temp;
 			}
@@ -101,10 +107,12 @@ class DLinkSeq: public Seq<E>
 			}
 			else
 			{
+				DLinkSeq<E>* curr = head;
 				E temp = head->data;
 				head = head->prev;
 				if(head != nullptr)
-					delete head->next;
+					head->next = nullptr;
+				delete curr;
 				return temp;
 			}
 		}
@@ -126,7 +134,7 @@ class DLinkSeq: public Seq<E>
 		{
 			DLinkSeq<E>* temp = head;
 			if(head == nullptr)
-				return nullptr;
+				temp = nullptr;
 			else
 				while(temp->prev != nullptr)
 					temp = temp->prev;
